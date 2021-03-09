@@ -8,7 +8,7 @@
   "scripts": {
     "build": "npx genversion --semi lib/version.js",
     "build:clean": "npx rimraf android/build && npx rimraf ios/build",
-    "prepare": "yarn run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
