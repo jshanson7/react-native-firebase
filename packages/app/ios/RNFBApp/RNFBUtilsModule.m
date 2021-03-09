@@ -64,9 +64,9 @@ RCT_EXPORT_MODULE();
           hasWarned = YES;
         }
       } else {
-        #if (!TARGET_OS_MACCATALYST)
-        asset = [[PHAsset fetchAssetsWithALAssetURLs:@[localFile] options:nil] firstObject];
-        #endif
+        // #if (!TARGET_OS_MACCATALYST)
+        // asset = [[PHAsset fetchAssetsWithALAssetURLs:@[localFile] options:nil] firstObject];
+        // #endif
       }
     } else {
       NSString *assetId = [localFilePath substringFromIndex:@"ph://".length];
